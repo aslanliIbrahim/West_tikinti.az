@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../src/scss/style.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+
+    <nav id="nav">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-2 col-sm-3">
+                    <div class="logo">
+                        <a href="index.html"> <img src="../src/photos/kartalwings-logo.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-10 col-sm-9">
+                    <ul id="web_menu">
+                        <li><a href="index.html">Ana sayfa</a></li>
+                        <li><a href="images.html">Görseller</a></li>
+                        <li><a href="Lokasyon.html">Lokasyon</a></li>
+                        <li><a href="floor-plans.html">Kat Planlari</a></li>
+                        <li><a href="about.html">Hakkımızda</a></li>
+                        <li><a href="contact.html">İletişim</a></li>
+                        <li><a id="calc" href="contact.html">Kankulyator</a></li>
+                        <select name="" id="">
+                            <option value="AZE">Aze</option>
+                            <option value="EN">En</option>
+                            <option value="Ru">Ru</option>
+                        </select>
+
+                    </ul>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="mobile_menu">
+            <button id="mobile_btn">
+                <i class="bi bi-list"></i>
+            </button>
+            <ul id="mobile_nav_items">
+                <button id="close_btn"><i class="bi bi-x-circle"></i></button>
+                <li><a href="#">Ana sayfa</a></li>
+                <li><a href="#">Görseller</a></li>
+                <li><a href="#">Lokasyon</a></li>
+                <li><a href="#">Kat Planlari</a></li>
+                <li><a href="#">Hakkımızda</a></li>
+                <li><a href="#">İletişim</a></li>
+            </ul>
+        </div>
+
+    </nav>
+
+    <main>
+        <section id="calculator-area">
+            <div class="container">
+                <div class="row justify-content-between my-5">
+                    <div class="left-side col-12 col-md-6 pe-5">
+                        <h2>
+                            İpoteka kalkulyatoru
+                        </h2>
+
+                        <form action="">
+                            <div class="for-select-area">
+                                <div class="row justify-content-evenly">
+                                    <div class="col-4 for-select">
+                                        <label for="room">Otaq sayı seçin</label>
+                                        <select name="room" id="room">
+                                            <option selected>Otaq sayı seçin</option>
+                                            <option value="1">1 Otaqlı</option>
+                                            <option value="2">2 Otaqlı</option>
+                                            <option value="3">3 Otaqlı</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-4 for-select">
+                                        <label for="room">Sahə seçin</label>
+                                        <select name="room" id="room">
+                                            <option selected>Sahə seçin</option>
+                                            <option value="1">1 Otaqlı</option>
+                                            <option value="2">2 Otaqlı</option>
+                                            <option value="3">3 Otaqlı</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-4 for-select">
+                                        <label for="room">Təmiri</label>
+                                        <select name="room" id="room">
+                                            <option selected>Təmiri</option>
+                                            <option value="1">Təmirili</option>
+                                            <option value="2">Ağ Divarlı</option>
+
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="border-area"></div>
+                                <div class="row down-select-area">
+
+                                    <div class="col-12 col-sm-12 col-lg-4 select-area">
+                                        <div class="for-select-border">
+                                            <label>İlkin ödəniş, faiz</label>
+                                            <select name="room" id="room">
+                                                <option selected>20%</option>
+                                                <option value="1">30%</option>
+                                                <option value="2">40%</option>
+                                                <option value="3">50%</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-sm-12 col-lg-4 select-area">
+                                        <div class="for-select-border">
+                                            <label> İllik faiz dərəcəsi </label>
+                                            <select name="room" id="room">
+                                                <option selected>10%</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-sm-12 col-lg-4 select-area">
+                                        <div class="for-select-border">
+                                            <label> Müddət </label>
+                                            <select name="room" id="room">
+                                                <option selected>10 il</option>
+                                                <option value="1">20 il</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="for-button">
+                                    <button type="submit">
+                                        Müraciət edin
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="right-side col-12 col-md-6">
+                        <div class="price-side">
+                            <p class="montlhy-payment">Aylıq ödəniş</p>
+
+                            <div class="cost-area">
+                                <img src="../src/photos/Vector (10).png" alt="">
+                                <p>584</p>
+                            </div>
+
+                            <div class="border-area"></div>
+
+                            <div class="price-place">
+                                <div class="initial-payment">
+                                    <span>İlkin ödəniş</span>
+                                    <p>22.000</p>
+                                </div>
+                                <div class="total-payment">
+                                    <span>Ümumi ödəniş</span>
+                                    <p>22.000</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="up-side">
+            <img src="../src/photos/ortaklar 1.png" alt="">
+        </div>
+        <div class="down-side">
+            <p>
+                Kartal Wings Konut Projesi Umran Yapı & Amad ortak iştirakidir. Sitede kullanılan tüm görsellerin ve
+                metinlerin telif hakları saklıdır. Copyright 2017.
+                <br>
+                Kripton Reklam Ajansı
+            </p>
+        </div>
+    </footer>
+
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

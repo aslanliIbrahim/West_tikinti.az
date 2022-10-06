@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../src/scss/style.css">
+    <title>Iletişim</title>
+</head>
+
+<body>
+
+
+    <nav id="nav">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-2 col-sm-3">
+                    <div class="logo">
+                      <a href="index.html">  <img src="../src/photos/kartalwings-logo.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-10 col-sm-9">
+                    <ul id="web_menu">
+                        <li><a href="index.html">Ana sayfa</a></li>
+                        <li><a href="images.html">Görseller</a></li>
+                        <li><a href="Lokasyon.html">Lokasyon</a></li>
+                        <li><a href="floor-plans.html">Kat Planlari</a></li>
+                        <li><a href="about.html">Hakkımızda</a></li>
+                        <li><a href="contact.html">İletişim</a></li>
+                        <li><a id="calc" href="contact.html">Kankulyator</a></li>
+                        <select name="" id="">
+                            <option value="AZE">Aze</option>
+                            <option value="EN">En</option>
+                            <option value="Ru">Ru</option>
+                        </select>
+
+                    </ul>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="mobile_menu">
+            <button id="mobile_btn">
+                <i class="bi bi-list"></i>
+            </button>
+            <ul id="mobile_nav_items">
+                <button id="close_btn"><i class="bi bi-x-circle"></i></button>
+                <li><a href="#">Ana sayfa</a></li>
+                <li><a href="#">Görseller</a></li>
+                <li><a href="#">Lokasyon</a></li>
+                <li><a href="#">Kat Planlari</a></li>
+                <li><a href="#">Hakkımızda</a></li>
+                <li><a href="#">İletişim</a></li>
+            </ul>
+        </div>
+
+    </nav>
+    <main id="main-area">
+        <div class="container">
+            <div class="row">
+                <div class="contact-area">
+                    <div class="up-side">
+                        <span>KARTAL WINGS İLETİŞİM</span>
+                    </div>
+                    <div class="down-side">
+                        <p>
+                            Petroliş Mahallesi Adalar Sokak Kartal İstanbul,Turkey
+                            <br><br>
+                            <span>Çağrı Merkezi</span> : 444 39 82
+                            <br><br>
+                            <span>E-Posta</span> : info@kartalwings.com
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer style="background-image: url(../src/photos/footer-back.jpg)">
+        <div class="container footer_m">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-lg-5">
+                    <div class="left_side">
+                        <img src="../src/photos/kartalwings-logo.png" alt="">
+                        <div class="row">
+                            <div class="col-6 col-md-4 col-sm-6">
+                                <ul>
+                                    <p>KARTAL WINGS</p>
+                                    <li><a href=""> Anasayfa</a></li>
+                                    <li><a href=""> Proje Hakkında</a></li>
+                                    <li><a href=""> Lokasyon</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-6 col-md-4 col-sm-6 ">
+                                <ul>
+                                    <p>GALERİ</p>
+                                    <li><a href="">Proje Görselleri </a></li>
+                                    <li><a href=""> Kat Planları</a></li>
+                                    <li><a href=""> E-Katalog İndir</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-6 col-md-4 col-sm-6 ">
+                                <ul>
+                                    <p>İLETİŞİM</p>
+                                    <li><a href=""> Itirab</a></li>
+                                    <li><a href=""> Size ulasim</a></li>
+                                    <li><a href=""> Satis ofisi harita</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="rigth_side">
+
+                        <form action="">
+                            <h1>Taleb ve Bilgi Formu</h1>
+                            <div class="form_input">
+                                <input type="text" placeholder="Adınız" required max="33" min="3">
+                                <input type="text" placeholder="Soyadınız" required max="33" min="3">
+                                <input type="email" placeholder="E-mail" required max="33" min="3">
+                                <input type="tel" placeholder="Telefon" required max="33" min="3">
+                                <textarea name="" id="" cols="3" rows="2" placeholder="Mesajiniz"></textarea>
+
+                                <button type="submit"> Muraciet et</button>
+                            </div>
+
+
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../src/js/app.js"></script>
+</body>
+
+</html>

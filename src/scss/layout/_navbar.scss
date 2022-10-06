@@ -1,0 +1,127 @@
+#nav {
+  background-color: $black_color;
+  padding: 20px 0px;
+  width: 100%;
+  border-bottom: 1px solid gray;
+  @media (max-width:768px) {
+    padding: 5px 0px;
+    
+  }
+  .logo {
+    img {
+      @include Img($img_width: 100%, $img_height: 40px, $object_fit: cover);
+      @media (max-width: 992px) {
+        object-fit: contain;
+      }
+    }
+  }
+  #web_menu {
+    @include flexible(space-evenly, center, row);
+    padding: 0;
+    @media (max-width:768px) {
+      display: none;
+      
+    }
+
+    li {
+      list-style: none;
+      a {
+        @include TextFont(
+          14px,
+          $w_color,
+          none,
+          center,
+          0,
+          0,
+          transparent,
+          400,
+          10px
+        );
+        transition: 0.2s ease-in-out;
+        &:hover {
+          color: gray;
+        }
+      }
+      #calc{
+        background-color: rgb(247, 21, 21);
+        border-radius: 10px;
+        padding: 6px 16px;
+        text-decoration: none;
+        color: white;
+      }
+    }
+
+    select {
+      border: 1px solid transparent;
+      border-radius: 5px;
+    }
+  }
+  .mobile_menu{
+    display: none;
+    position: relative;
+    @media (max-width:768px) {
+      display: block ;
+      
+    }
+    .mobile_sticky{
+      background-color: transparent;
+      border: none;
+      background: black !important;
+      width: 100% !important;
+      position: fixed !important;
+      top: 0px !important;
+      z-index: 10 !important;
+      display: flex !important;
+    }
+    button{
+      background-color: transparent;
+      border: none;
+      
+      i{
+        font-size: 31px;
+        color: white;
+        padding: 0px 10px;
+        cursor: pointer;
+      }
+    }
+
+    #mobile_nav_items{
+      position: fixed;
+      top: 0px;
+      left: 0;
+      right: 0;
+      height: 100vh;
+      z-index: 1333;
+      transition: .3s ease-in-out;
+      transform: translateX(-400px);
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+      padding: 20px 10px;
+      width: 300px;
+      button{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        color: black;
+        i{
+          color: black;
+        }
+      }
+      li{
+        list-style: none;
+        padding: 10px 5px;
+        border-bottom: 1px solid gray;
+        a{
+          text-decoration: none;
+          color: black;
+          font-size: 15px;
+        }
+
+      }
+    }
+  }
+
+
+}
+

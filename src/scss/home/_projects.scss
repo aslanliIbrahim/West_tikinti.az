@@ -1,0 +1,54 @@
+#projects {
+  background-color: $black_color;
+  padding: 50px;
+  @media (max-width: 769px) {
+    padding: 20px 10px;
+  }
+  .left_side {
+    img {
+      @include Img(100%, 480px, cover, none, 0, 30px 0px, 0);
+    }
+  }
+  .rigtht_side {
+    h1 {
+      @include TextFont($h1_size, $w_color, none, start, 40px 14px 14px -96px, 30px 0px, transparent, 400, 35px);
+      @media (max-width: 992px) {
+        margin: 0;
+        font-size: 36px;
+        line-height: 40px;
+      }
+    }
+    .one_p {
+      @include TextFont($p_size, $w_color, none, start, 0, 10px 0px, transparent, 500, 24px);
+      @media (max-width: 768px) {
+        font-size: 14px;
+      }
+    }
+    .second_p {
+      @extend .one_p;
+    }
+  }
+
+  .project_social {
+    @extend %flex_wraps;
+
+    .project_social_body {
+      @include flexible(center, center, column);
+      gap: 10px;
+    }
+
+    img {
+      @extend %iconImg;
+    }
+    p {
+      @extend %home_social_text;
+    }
+  }
+}
+
+#bg_banner {
+  @extend %home_bg_attachment;
+}
+#foot_bg{
+  @extend %home_fopt_bg_attachment;
+}

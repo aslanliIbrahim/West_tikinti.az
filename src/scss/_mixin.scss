@@ -1,0 +1,149 @@
+@mixin flexible($jus: null, $items: null, $direction: null) {
+  display: flex;
+  justify-content: $jus;
+  align-items: $items;
+  flex-direction: $direction;
+}
+
+@mixin TextFont(
+  $f_size: null,
+  $f_color: null,
+  $text_decaration: null,
+  $text_align: null,
+  $margin: null,
+  $padding: null,
+  $background: null,
+  $text_weight: null,
+  $line_height: null
+) {
+  font-size: $f_size;
+  font-weight: $text_weight;
+  line-height: $line_height;
+  color: $f_color;
+  text-decoration: $text_decaration;
+  margin: $margin;
+  padding: $padding;
+  background-color: $background;
+  text-align: $text_align;
+}
+
+@mixin Img(
+  $img_width: null,
+  $img_height: null,
+  $object_fit: null,
+  $boder: null,
+  $border_radius: null,
+  $margin: null,
+  $b_shadow: null
+) {
+  width: $img_width;
+  height: $img_height;
+  margin: $margin;
+  border-radius: $border_radius;
+  box-shadow: $b_shadow;
+  border: $boder;
+  object-fit: $object_fit;
+}
+
+@mixin Bg_img(
+  $width: null,
+  $height: null,
+  $bg_size: null,
+  $bg_position: null,
+  $bg_attachment: null,
+  $bg_repeat: null,
+  $padding: null,
+  $margin: null
+) {
+
+  width: $width;
+  height: $height;
+  margin: $margin;
+  padding: $padding;
+  background-attachment: $bg_attachment;
+  background-repeat: $bg_repeat;
+  background-size: $bg_size;
+  background-position: $bg_position;
+}
+
+@mixin Inputs(
+  $width: null,
+  $padding: null,
+  $margin: null,
+  $border_radius: null,
+  $color: null
+) {
+  width: $width;
+  margin: $margin;
+  padding: $padding;
+  border-radius: $border_radius;
+  color: $color;
+}
+
+@mixin _button(
+  $width: null,
+  $padding: null,
+  $margin: null,
+  $border_radius: null,
+  $color: null,
+  $bg_color: null,
+  $border: null,
+  $text_align: null
+) {
+  width: $width;
+  margin: $margin;
+  padding: $padding;
+  border-radius: $border_radius;
+  color: $color;
+  background-color: $bg_color;
+  border: $border;
+  text-align: $text_align;
+}
+
+%flex_wraps {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  justify-content: start;
+  align-items: center;
+}
+
+%iconImg {
+  width: 120px;
+  height: 40px;
+  object-fit: contain;
+  @media (max-width: 768px) {
+    width: 50px;
+    height: 30px;
+  }
+}
+
+%home_social_text {
+  color: white;
+  width: 110px;
+  text-align: center;
+  padding: 10px 0px;
+  @media (max-width: 768px) {
+    width: 110px;
+  }
+}
+
+%home_bg_attachment {
+  width: 100%;
+  height: 400px;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+%home_fopt_bg_attachment {
+  width: 100%;
+  height: 850px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  @media (max-width:768px) {
+    height: 400px;
+    
+  }
+}

@@ -1,0 +1,66 @@
+footer {
+    @include Bg_img(100%, 700px !important, cover, center, none, no-repeat, 0, 0);
+    @media (max-width: 768px) {
+
+        background-color: black;
+        background-image: none !important;
+        display: block !important;
+        height: auto !important;
+    }
+    .footer_m {
+        padding-top: 200px;
+        @media (max-width:768px) {
+            padding-top: 20px;
+            
+        }
+    }
+    .left_side {
+        img {
+            @include Img(100%, 40px, contain, 0, 0, 0, null);
+        }
+        ul {
+            padding: 30px 0px;
+            p {
+                @include TextFont($p_size, $w_color, none, start, 0, 5px 0px, transparent, 300, 30px);
+            }
+            li {
+                list-style: none;
+                padding: 4px 0px;
+                a {
+                    @include TextFont($a_size, $w_color, none, start, 0, 0, transparent, 500, 22px);
+                }
+            }
+        }
+    }
+    .rigth_side {
+        form {
+            background-color: rgba(0, 7, 42, 0.5);
+
+            h1 {
+                @include TextFont($h1_size, $w_color, none, center, 0, 12px 0px, transparent, 500, 30px);
+                background-color: $black_color;
+            }
+            .form_input {
+                padding: 25px;
+                input {
+                @include Inputs(100%,12px 12px,6px 0px,6px,black,)
+                }
+                textarea {
+                    width: 100%;
+                    resize: none;
+                    padding: 10px 20px;
+                }
+               button{
+                @include _button(100%,12px 0px,6px 0px,6px,$w_color,$black_color,none,center);
+                transition: .3s ease-in-out;
+                border: 1px solid white;
+                &:hover{
+                    background-color: $w_color;
+                    color: $black_color;
+                    
+                }
+               }
+            }
+        }
+    }
+}

@@ -1,0 +1,42 @@
+#floorPlans{
+
+    .heading-area{
+        
+        margin-top: 30px;
+        @include flexible(center,center,column);
+        &::after{
+            background-color: #333;
+            width: 70px;
+            height: 1px;
+            margin: 10px auto;
+            display: block;
+            content: "";
+        }
+        span{
+            @media only screen and (max-width:768px) {
+                
+                @include TextFont($f_size:$p_size);
+            }
+            @include TextFont($f_size:$h1_size,$f_color:$golder_color,$text_decaration:uppercase);
+        }
+    }
+
+    .cards-area{
+        @include flexible(center, center, row);
+        @media only screen and (max-width:768px) {
+            width: 100%;
+        }
+        flex-wrap: wrap;
+        .img-side{
+            margin-bottom: 5px;
+            margin-left: 5px;
+            a{
+                img{
+                    @include Img($img_width:15vw,$boder:2px solid $golder_color,$border_radius:5px);
+                }
+            }
+        }
+    }
+
+  
+}

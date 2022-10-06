@@ -1,0 +1,75 @@
+#project_plans {
+    padding: 40px 0px;
+    h3 {
+        color: $black_color;
+        font-size: 32px;
+        position: relative;
+        &::after {
+            position: absolute;
+            bottom: -10px;
+            left: 25%;
+            right: 0;
+            content: "";
+            background-color: $black_color;
+            width: 100px;
+            height: 2px;
+        }
+    }
+    p {
+        @include TextFont($p_size, $black_color, none, center, 10px 0px, 10px 0px, transparent, 300, 30px);
+    }
+    #plan_list {
+        @include flexible(center, center, row);
+        gap: 40px;
+        padding: 20px 0px;
+        border-bottom: 1px solid gray;
+        @media (max-width:768px) {
+            gap: 10px;
+            
+        }
+        li {
+            list-style: none;
+            transition: 0.3s ease-in-out;
+            padding: 4px 16px;
+            cursor: pointer;
+            &:hover {
+                background-color: gray;
+            }
+        }
+        .active {
+            background-color: #81b1c2;
+        }
+    }
+    .tab_item{
+        .tab_item_body{
+            img{
+                width: 100%;
+                height: 550px;
+                object-fit: cover;
+                @media (max-width:768px) {
+                height: 300px;
+                    
+                }
+            }
+        }
+        .content {
+            display: none;
+            padding: 10px 20px;
+          }
+          
+          .content.active {
+            display: block !important;
+          }
+    }
+
+    #all{
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 25px;
+        color: white;
+        text-decoration: none;
+        margin: 15px auto;
+        padding: 12px;
+        background-color: #f71515;
+    }
+}

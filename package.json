@@ -1,0 +1,23 @@
+{
+  "name": "west_tikinti",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Parvin-Gasimli/West_tikinti.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Parvin-Gasimli/West_tikinti/issues"
+  },
+  "homepage": "https://github.com/Parvin-Gasimli/West_tikinti#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.1"
+  }
+}

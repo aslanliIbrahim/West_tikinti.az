@@ -1,0 +1,135 @@
+
+main {
+  width: 100%;
+  .left-side {
+    
+    form {
+      .for-select-area {
+        @include flexible($jus:space-evenly,$direction:column);
+        height: 400px;
+        .for-select {
+          @include flexible(space-between, flex-start,column);
+          height: 70px;
+          label{
+            @media only screen and (min-width:425px) and (max-width:768px) {
+              font-size: 1.5vw;
+            }
+            @media only screen and (max-width:425px) {
+              font-size: 3.5vw;
+            }
+          }
+          select{
+            border: 1px solid #969696;
+            border-radius: 5px;
+            width: 100%;
+            color: #969696;
+            height: 40px;
+          }
+        }
+        .border-area{
+            border-top: 2px solid #969696;
+        }
+        .down-select-area{
+            .select-area{
+              @include flexible(center, center, row);
+              select{
+                margin-bottom: 40px;
+                width: 80%;
+                border: 1px solid #969696;
+                height: 40px;
+                color: #969696;
+                border-radius: 5px;
+            }
+            }
+           
+        }
+        .for-button{
+          @include flexible(center, center, row);
+          button{
+            border: 2px solid transparent;
+            border-radius: 5px;
+            padding: 11px 46px;
+            background-color: #ED2323;
+            color: white;
+            transition: 0.2s ease-in-out;
+            &:hover{
+              color: #ED2323;
+              background-color: white;
+              border: 2px solid #ED2323;
+            }
+        }
+        }
+        
+      }
+    }
+  }
+  .right-side {
+    // border: 2px solid red;
+    background-color: black;
+    border-radius: 10px;
+    color: white;
+    height: 500px;
+    @include flexible(center, center, column);
+    .price-side {
+      // border: 2px solid red;
+      width: 80%;
+      @include flexible(space-between, center, column);
+      
+      .montlhy-payment {
+        p {
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 21px;
+          text-align: center;
+        }
+      }
+      .border-area {
+        border-top: 2px solid #969696;
+        width: 80%;
+      }
+      .cost-area {
+        width: 50%;
+        @include flexible(space-evenly, center, row);
+        font-size: 96px;
+      }
+      .price-place {
+        @include flexible($jus:space-between);
+        width: 80%;
+        margin-top: 27px;
+        .initial-payment {
+          width: 30%;
+          @include flexible(center, center, column);
+          text-align: center;
+          span {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 21px;
+          }
+        }
+        .total-payment {
+          width: 30%;
+          @include flexible(center, center, column);
+          text-align: center;
+          span {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 21px;
+          }
+        }
+      }
+    }
+  }
+}
+
+footer {
+  height: 300px;
+  width: 100%;
+  background-color: $black_color;
+  @include flexible(space-around, center, column);
+  .down-side {
+    p {
+      text-align: center;
+      color: white;
+    }
+  }
+}

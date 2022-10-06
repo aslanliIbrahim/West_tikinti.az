@@ -1,0 +1,79 @@
+#galery_slider {
+  background-color: $black_color;
+  padding: 30px;
+  h3 {
+    color: white;
+    font-size: 32px;
+    position: relative;
+    &::after {
+      position: absolute;
+      bottom: -10px;
+      left: 25%;
+      right: 0;
+      content: "";
+      background-color: white;
+      width: 100px;
+      height: 2px;
+    }
+  }
+  .swiper {
+    width: 100%;
+    height: 100%;
+    .swiper-pagination-bullet-active {
+      width: 50px;
+      padding: 6px;
+      border-radius: 4px;
+      background: white;
+    }
+    .swiper-pagination-bullet {
+      opacity: 1 !important;
+      background-color: white !important;
+    }
+    .swiper-pagination {
+      @include flexible(center, center, row);
+    }
+  }
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    @include flexible(center, center, row);
+  }
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    @media (max-width: 768px) {
+      height: 300px;
+    }
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    right: 10px;
+    padding: 10px;
+    color: rgb(244, 244, 244) !important;
+    stroke: rgb(243, 243, 243) !important;
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+  #slide_text {
+   
+    @include TextFont($p_size,$w_color,none,center,5px 0px,0,transparent,300,25px);
+  }
+  a{
+    @include TextFont($p_size,$w_color,none,center,15px auto,6px, rgb(247, 21, 21),300,25px);
+    text-align:center;
+       display: block;
+       width: 200px;
+       border-radius: 4px;
+       transition: .3s ease-in-out;
+       &:hover{
+        background-color: transparent;
+        color:  rgb(247, 21, 21);
+        border: 1px solid white;
+       }
+       
+  }
+}

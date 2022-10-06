@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../src/scss/style.css">
+</head>
+
+<body>
+
+    <nav id="nav">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-2 col-sm-3">
+                    <div class="logo">
+                      <a href="index.html">  <img src="../src/photos/kartalwings-logo.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-10 col-sm-9">
+                    <ul id="web_menu">
+                        <li><a href="index.html">Ana sayfa</a></li>
+                        <li><a href="images.html">Görseller</a></li>
+                        <li><a href="Lokasyon.html">Lokasyon</a></li>
+                        <li><a href="floor-plans.html">Kat Planlari</a></li>
+                        <li><a href="about.html">Hakkımızda</a></li>
+                        <li><a href="contact.html">İletişim</a></li>
+                        <li><a id="calc" href="contact.html">Kankulyator</a></li>
+                        <select name="" id="">
+                            <option value="AZE">Aze</option>
+                            <option value="EN">En</option>
+                            <option value="Ru">Ru</option>
+                        </select>
+
+                    </ul>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="mobile_menu">
+            <button id="mobile_btn">
+                <i class="bi bi-list"></i>
+            </button>
+            <ul id="mobile_nav_items">
+                <button id="close_btn"><i class="bi bi-x-circle"></i></button>
+                <li><a href="#">Ana sayfa</a></li>
+                <li><a href="#">Görseller</a></li>
+                <li><a href="#">Lokasyon</a></li>
+                <li><a href="#">Kat Planlari</a></li>
+                <li><a href="#">Hakkımızda</a></li>
+                <li><a href="#">İletişim</a></li>
+            </ul>
+        </div>
+
+    </nav>
+
+    <main>
+    
+   
+   
+        <section id="locations" style="background-image: url(../src/photos/location.jpg)">
+            <div class="container">
+                <div class="row justify-content-center align-items-center pt-4">
+                    <div class="col-lg-8">
+                        <h2>
+                            KARTAL WINGS KONUMU
+                        </h2>
+                        <p>Kartal Wings konut projesi sakinlerinin yoğun İstanbul trafiğine karşı çeşitli çözüm şansları
+                            var. Çünkü her türlü toplu taşıma aracı ile İstanbul'un her köşesine karadan ve denizden
+                            kolaylıkla ulaşabilirsiniz.</p>
+
+                        <h4>
+
+                            Lüks bir projede yaşamanın avantajları ile Kartal sahil yolu size 3 dk., E5 ve Kadıköy -
+                            Sabiha Gökçen (*) metro hattı ise 6-7 dakikalık mesafede. Dolayısı ile son Kartal Wings son
+                            derece rahat ulaşılabilir bir konumda.
+                        </h4>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="container pt-5 mt-3">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <ul>
+                            <li>
+                                <img src="../src/photos/marina.png" alt="">
+                                <p>Pendik Marina
+                                    6,0 km</p>
+                            </li>
+                            <li>
+                                <img src="../src/photos/sahil.png" alt="">
+                                <p>Sahil Yolu
+                                    2,0 km</p>
+                            </li>
+                            <li>
+                                <img src="../src/photos/metro.png" alt="">
+                                <p>Metro İstasyonu
+                                    2,0 km</p>
+                            </li>
+                            <li>
+                                <img src="../src/photos/ucak.png" alt="">
+                                <p>Sabiha Gökçen havalimanı
+                                    17 km</p>
+                            </li>
+                            <li>
+                                <img src="../src/photos/hizlitren.png" alt="">
+                                <p>Hızlı Tren
+                                    1,6 km</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </section>
+
+        <section id="map_img_lokasyon" style="background-image: url(../src/photos/wings-harita.png)"> </section>
+
+
+        <section id="foot_bg" style="background-image: url(../src/photos/photos.avif)">
+
+        </section>
+        <section id="west_map">
+            <div class="mapouter">
+                <div class="gmap_canvas"><iframe id="gmap_canvas"
+                        src="https://maps.google.com/maps?q=%20Baku%20West%20hospital&t=k&z=11&ie=UTF8&iwloc=&output=embed"
+                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+    
+    </main>
+
+
+
+
+
+    <footer style="background-image: url(../src/photos/footer-back.jpg)">
+        <div class="container footer_m">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-lg-5">
+                    <div class="left_side">
+                        <img src="../src/photos/kartalwings-logo.png" alt="">
+                        <div class="row">
+                            <div class="col-6 col-md-4 col-sm-6">
+                                <ul>
+                                    <p>KARTAL WINGS</p>
+                                    <li><a href=""> Anasayfa</a></li>
+                                    <li><a href=""> Proje Hakkında</a></li>
+                                    <li><a href=""> Lokasyon</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-6 col-md-4 col-sm-6 ">
+                                <ul>
+                                    <p>GALERİ</p>
+                                    <li><a href="">Proje Görselleri </a></li>
+                                    <li><a href=""> Kat Planları</a></li>
+                                    <li><a href=""> E-Katalog İndir</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-6 col-md-4 col-sm-6 ">
+                                <ul>
+                                    <p>İLETİŞİM</p>
+                                    <li><a href=""> Itirab</a></li>
+                                    <li><a href=""> Size ulasim</a></li>
+                                    <li><a href=""> Satis ofisi harita</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="rigth_side">
+
+                        <form action="">
+                            <h1>Taleb ve Bilgi Formu</h1>
+                            <div class="form_input">
+                                <input type="text" placeholder="Adınız" required max="33" min="3">
+                                <input type="text" placeholder="Soyadınız" required max="33" min="3">
+                                <input type="email" placeholder="E-mail" required max="33" min="3">
+                                <input type="tel" placeholder="Telefon" required max="33" min="3">
+                                <textarea name="" id="" cols="3" rows="2" placeholder="Mesajiniz"></textarea>
+
+                                <button type="submit"> Muraciet et</button>
+                            </div>
+
+
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="../src/js/app.js"></script>
+</body>
+
+</html>
