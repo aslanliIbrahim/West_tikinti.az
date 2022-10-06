@@ -1,0 +1,1 @@
+# West_tikinti.az
